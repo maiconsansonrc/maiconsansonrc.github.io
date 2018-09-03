@@ -1,0 +1,51 @@
+<html>
+  <head>
+    <title>TAG TEST ANIMATION</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .header {
+        background: #fff;
+        border: 1px solid #ccc;
+        height: 94px;
+        position: relative;
+        z-index: 1;
+      }
+      .tag {
+        animation: pendulum 1s ease-in-out 1 forwards;
+        display: inline-block;
+        height: 173px;
+        margin: 0 150px;
+        position: absolute;
+        transform: rotate(-125deg);
+        transform-origin: 50% 0%;
+        top: 90px;
+        width: 117px;
+        z-index: 0;
+      }
+      @keyframes pendulum {
+        0% {
+          transform: rotate(-120deg);
+        }
+        50% {
+          transform: rotate(30deg);
+        }
+        85% {
+          transform: rotate(-5deg);
+        }
+        100% {
+          transform: rotate(0deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+    </div>
+    <div class="tag">
+      <img src="tag.png" />
+    </div>
+  </body>
+</html>
